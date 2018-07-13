@@ -15,11 +15,11 @@
   <p>パスワードの長さ:<input type="text" ng-model="passLength" ng-init="passLength=8"/></p>
   <p>パスワード中の数字の数      :<input type="text" ng-model="passContainNums" ng-init="passContainNums=1"/></p>
   <input type="button" value="create" ng-click="psclick(passNums,passLength,passContainNums)">
-  <ol>
+  <ul>
 	<li ng-repeat="ps in passwords">
 	  {{ ps }}
 	</li>
-  </ol>
+  </ul>
 </div>
 </body>
 </html>
